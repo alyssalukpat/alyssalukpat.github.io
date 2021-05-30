@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      
+    <!-- Your CSS files -->
+    <link rel="stylesheet" href="{{#if relativePrefix}}{{relativePrefix}}/{{/if}}style/default.css">
+    
+    <!-- google fonts: Roboto Condensed(super-font) and Lora(sub-font) -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet"> 
+  
+    <title>{{name}} portfolio</title>
+  </head>
+    
+  <style>
+    {{#if css}}
+      {{css}}
+    {{/if}}
+
+    body {
+      {{#if text_color}}
+        color: {{ text_color }} !important;
+      {{/if}}
+      {{#if bg_color}}
+        background: {{ bg_color }} !important;
+      {{/if}}
+    }
+  </style>
+  <body class="beige-theme">
+    <div class="container"><!-- start of the main container-->
+        {{!-- <div class="row justify-content-center"><!-- headline and intro --> --}}
+               <h1 class="headline super-font">{{name}}</h1>
+                <div class="body-text">
+                    <p>{{ bio }}</p>
+                    <a target="_blank" href="https://twitter.com/@akl_07"><img class="pic-small" alt="Twitter" src="https://static-assets.journoportfolio.com/public/icons/dark/twitter.313dcc58c2d7.png"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/alyssalukpat/"><img class="pic-small" alt="Linkedin" src="https://static-assets.journoportfolio.com/public/icons/dark/linkedin.b651e29978b8.png"></a>
+                    {{!-- <a target="_blank" href="https://muckrack.com/alyssa-lukpat"><img class="pic-small" alt="Muck Rack" src="/Users/ALukpat/Desktop/example1/Untitled_design.png"></a> --}}
+                    <a target="_blank" href="/Users/ALukpat/Desktop/example1/MSDJLukpatAlyssa.pdf"> <img class="pic-small"alt="Resume" src="https://static-assets.journoportfolio.com/public/icons/dark/www.adfec3828ed4.png"></a>
+                  
+                  <br><br>
+
+                  {{!-- <div class="topnav">
+                    <p class='nav-stuff'>Home</p>
+                    <a href="/Users/ALukpat/Desktop/example1/docs/about/index.html">About</a>
+                </div> --}}
+                    {{!-- <ul class='spread'>
+                        {{#each links}}
+                            <li><a href="{{this.target}}">{{ this.text }}</a></li>
+                        {{/each}}
+                    </ul> --}}
+               </div>
+               <div class="container">
+                 <div class="row">
+                   <div class="col-6">
+                    <p class="body-text2">Welcome! I'm Alyssa Lukpat, a data journalism master's student at Columbia University.</p>
+                    <p class="body-text2">In pursuit of a great story, I've played soccer with the Panamanian women's soccer team, reported on a deadly gas explosion in Maine, marched with climate strikers on the streets of Boston and filmed the euphoria and chaos of Prince Harry and Meghan Markle's wedding.</p>
+                    <p class="body-text2">I thrive at the intersection of storytelling and coding, which is why I’m attending Columbia. I’m supplementing my reporting skills by learning how to code, analyze data, design graphics and scrape websites. I believe the best stories feature clean data and beautiful writing, and I can’t wait to produce both.</p>
+                    <p class="body-text2">And now for a surreal life update: I will be joining the New York Times in June as a fellow on the Express Desk!</p>
+                    <p class="body-text2">Here's a little bit about the reporting I've done so far:</p>
+                    <ul>
+                      <li class="body-text2">At the Raleigh News &#38; Observer, I was a metro intern. I analyzed and wrote about COVID data. I reported on Confederate statues, hurricanes and police reform against the backdrop of a pandemic and a racial reckoning. My reporting prompted the Durham Housing Authority to rename a complex named after a racist man.</li>
+                      <li class="body-text2">At the Boston Globe, I was a metro co-op for six months. I covered everything from shootings and skunk attacks to the Obama family's secret mansion and Dolly Parton's Christmas escapades in Beantown. I honed my breaking news skills on the city desk, where I learned to report and write at a breakneck speed without sacrificing accuracy. After my co-op ended, I worked part-time for the metro section on weekends and holidays.</li>
+                      <li class="body-text2">I moonlighted as a web producer for the Globe. During the early months of the pandemic, I helped drive the Globe's coronavirus coverage and wrote a live blog as developments unfolded every few minutes. It was a fast-paced job: While I monitored the wires, I laid out the homepage, tracked story analytics, wrote headlines and tweets and crafted newsletters and breaking news alerts.</li>
+                    </ul>
+                    <p class="body-text2">You can reach me at <a href = "mailto:alyssa.lukpat@nytimes.com">alyssa.lukpat@nytimes.com</a>.</p>
+                  </div>
+                 <div class="col-6">
+                     {{#each pages}}
+                    <div class='story'>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-3">
+                            <a href='{{this.slug}}/index.html'><img class='pic-hp' src='{{this.img}}'></a>
+                          </div>
+                          <div class="col-9">
+                            <h4 class="subhead super-font"><a href="{{ this.slug }}/index.html" style="color:black; font-size:1.1rem">{{ this.title }}</a></h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {{/each}}
+                 </div>
+               </div>     
+                    
+
+                  
+            </div>
+      </div></div><!-- end of the main container-->
+   
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://static-assets.journoportfolio.com/themes_v1/sidebar/js/scripts.2bf90613b87a.js"></script>
+  </body>
+</html>
