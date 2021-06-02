@@ -1,1 +1,1 @@
-Visit https://alyssalukpat.github.io/databases-2020-final-project/ to view my map, and head to https://alyssalukpat.github.io/example1/docs/index.html to see a portfolio I made in spring 2021.
+To see a map I made in my databases class, head here: https://alyssalukpat.github.io/databases-2020-final-project/. You can see a portfolio I made in spring 2021 here: https://alyssalukpat.github.io/docs/
