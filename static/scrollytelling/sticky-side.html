@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollytelling story</title>
+    <meta name="description" content="Scrollytelling story" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #scrolly {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #f3f3f3;
+        padding: 1rem;
+      }
+
+      #scrolly > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      #scrolly2 {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #f3f3f3;
+        padding: 1rem;
+      }
+
+      #scrolly2 > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      article {
+        position: relative;
+        padding: 0 1rem;
+        max-width: 20rem;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        /* background-color: #8a8a8a; */
+        z-index: 0;
+        top: 12.5vh;
+        height: 63.78vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center center;
+        background-image: url("https://www.paperboysclub.com/wp-content/uploads/2018/05/tmp_3qlrB8_22cb05fe614e90cf_GettyImages-880450748-700x600.jpg")
+
+      }
+
+      .sticky-thing p {
+        padding: 1rem;
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .sticky-thing img {
+        padding: 1rem;
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .scroll__graphic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: auto;
+      width: 100%;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    .scroll__graphic.is-fixed {
+      position: fixed;
+    }
+
+    .scroll__graphic.is-bottom {
+      bottom: 0;
+      top: auto;
+    }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        background-color: #3b3b3b;
+        color: #fff;
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active {
+        background-color: #add8e6;
+        color: #3b3b3b;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <!-- <nav>
+        <a href="https://github.com/russellgoldenberg/scrollama">scrollama.js</a>
+        <div class="nav__examples">
+          <p>Examples:</p>
+          <a href="basic.html">Basic</a>
+          <a href="progress.html">Progress</a>
+          <a href="sticky-side.html">Sticky Side</a>
+          <a href="sticky-overlay.html">Sticky Overlay</a>
+        </div>
+      </nav> -->
+      <section id="intro" class="hero">
+        <h1 class="intro__hed">Here's why Meghan Markle is a living icon</h1>
+        <p class="intro__dek">
+          By me
+        </p>
+      </section>
+
+      <section id="scrolly">
+        <article>
+          <div class="step" data-step="1" data-pic="https://www.geo.tv/assets/uploads/updates/2021-06-02/353151_1490770_updates.jpg">
+            <p>Meghan Markle is an iconic queen. She studied at Northwestern University, interned at an embassy in Argentina, and ultimately landed a role on "Suits."</p>
+            <!-- <img src="https://purewows3.imgix.net/images/articles/2021_04/meghan_markle_royal_family_website.jpg?auto=format,compress&cs=strip"> -->
+          </div>
+          <div class="step" data-step="2" data-pic="https://i.pinimg.com/736x/8f/5b/8a/8f5b8a5c38a8314747598ce4b388f7e5.jpg">
+            <p>She's a gifted writer and she has great style.</p>
+          </div>
+          <div class="step" data-step="3" data-pic="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/misha-nonoo-meghan-markle-1511908888.jpg">
+            <p>She makes friends easily. One of those friends supposedly introduced her to a prince.</p>
+          </div>
+          <div class="step" data-step="4" data-pic="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F12%2F15%2FGettyImages-1176004905-2000.jpg">
+            <p>She brought a new energy to the British royal family. She also had enough life experience to stand up for herself within the royal machine.</p>
+          </div>
+        </article>
+
+        <!-- <div class="scroll__graphic">
+          <img class="pic" src="https://marriedbiography.com/wp-content/uploads/2017/08/meghan-markle-instagram.jpg">
+          <img class="pic" data-step="2" src="https://www.huntpoll.com/assets/galleries/img_1517478830.jpg">
+
+
+        </div> -->
+        
+
+        <div class="sticky-thing">
+          <!-- <p>0</p> -->
+          <!-- <img class="pic" src="https://marriedbiography.com/wp-content/uploads/2017/08/meghan-markle-instagram.jpg"> -->
+        </div>
+        </div>
+      </section>
+
+      <!-- <section id="outro"></section> -->
+      <br>
+
+
+      <section id="scrolly2">
+        <article>
+          <div class="step" data-step="5" data-pic="https://media.newyorker.com/photos/5baa74c78688f82d6d666acf/master/pass/Mead-Markle-Cookbook.jpg">
+            <p>She pursued some really interesting philanthropic projects, such as a clothing line and a cookbook.</p>
+          </div>
+          <div class="step" data-step="6" data-pic="https://i.insider.com/60467f0c44d8e300117b9abe?width=700">
+            <p>She was popular with the crowds when she went with her husband on international tours.</p>
+          </div>
+          <div class="step" data-step="7" data-pic="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/prince-william-kate-middleton-prince-harry-meghan-markle-remembrance-sunday-1572950910.jpg?crop=0.606xw:0.909xh;0.183xw,0.0907xh&resize=480:*">
+            <p>But the royal family was not nice to her. They squandered her social and philanthropic gifts. So she moved home to California.</p>
+          </div>
+          <div class="step" data-step="8" data-pic="https://assets.vogue.com/photos/5f3c4db0c7d6907d4b69a5b8/master/w_3000,h_2219,c_limit/GettyImages-1052424454.jpg">
+            <p>Whatever. The U.K.'s loss is California's gain. Haters be gone!</p>
+          </div>
+          <div class="step" data-step="9" data-pic="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/prince-harry-duke-of-sussex-and-meghan-duchess-of-sussex-news-photo-1608051049.?resize=640:*">
+            <p>And now she and her husband are raking in millions after signing deals with Netflix and Spotify. A true business mind and an icon.</p>
+          </div>
+        </article>
+
+        <div class="sticky-thing">
+          <!-- <img class="pic" src="https://www.paperboysclub.com/wp-content/uploads/2018/05/tmp_3qlrB8_22cb05fe614e90cf_GettyImages-880450748-700x600.jpg"> -->
+        </div>
+      </section>
+
+      <section id="outro"></section>
+
+
+
+
+    </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var scrolly2 = main.querySelector("#scrolly2");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var sticky2 = scrolly2.querySelector(".sticky-thing");
+      var article2 = scrolly2.querySelector("article");
+      var steps = article.querySelectorAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+
+        // response = { element, direction, index }
+        var el = response.element;
+
+        // remove is-active from all steps
+        // then add is-active to this step
+        steps.forEach(step => step.classList.remove('is-active'));
+        el.classList.add('is-active');
+
+        // update graphic based on step
+        sticky.querySelector("p").innerText = el.dataset.step;
+        sticky.style.backgroundImage = url(el.dataset.pic);
+
+      }
+
+
+      function init() {
+        scroller
+          .setup({
+            // step: "#main article .step",
+            step: "#scrolly article .step",
+            offset: 0.33,
+            debug: false
+          })
+          .onStepEnter(handleStepEnter);
+          // .onStepEnter(handleStepEnter2);
+          
+
+        // setup resize event
+        window.addEventListener("resize", scroller.resize);
+
+      }
+
+
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+
+        // response = { element, direction, index }
+        var el = response.element;
+
+        // remove is-active from all steps
+        // then add is-active to this step
+        steps.forEach(step => step.classList.remove('is-active'));
+        el.classList.add('is-active');
+
+        // update graphic based on step
+        sticky2.querySelector("p").innerText = el.dataset.step;
+        sticky2.style.backgroundImage = url(el.dataset.pic);
+
+      }
+
+      function init2() {
+        scroller
+          .setup({
+            step: "#scrolly2 article2 .step",
+            offset: 0.33,
+            debug: false
+          })
+          .onStepEnter(handleStepEnter);
+          
+
+        // setup resize event
+        window.addEventListener("resize", scroller.resize);
+
+      }
+
+
+      // kick things off
+      init();
+      init2();
+
+    </script>
+  </body>
+</html>
