@@ -1,0 +1,231 @@
+
+
+body {
+    padding-top:60px;
+    /* margin: auto; */
+}
+
+.fake-table > div, ul.spread {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style-type: none;
+}
+
+.story {
+    padding-top: 6.5px;
+    
+}
+
+/* .col-lg-3 {
+    padding-right: 36.5px;
+    background-color: #BBFFFF;
+} */
+
+.col-9 {
+    padding-left: 66.5px;
+    font-size: 1.1rem;
+}
+
+ul.spread {
+    padding-left: 0;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.fake-table > div > div, ul.spread li {
+    margin: 15px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+/* choose a light or dark theme to add to the body tag. */
+.dark-theme {
+    background-color: #181414;
+    color: #fcfbfb;   
+}
+
+.light-theme {
+    background-color: white;
+    color: black;    
+}
+
+.beige-theme {
+    background-color: #ffffff;
+    color: black;    
+}
+
+.pic-small {
+    max-width: 3%;
+}
+
+.pic {
+    max-width: 100%;
+}
+
+.pic-hp {
+    width: 170px;
+    height: 80px;
+}
+
+/* .container {
+        max-width: 975px;
+} */
+
+/* ******** */
+
+
+/*
+super-font
+.headline
+.kicker
+.subhead
+.label
+.label-text
+.credit
+
+sub-font
+.date
+.body-text
+.note
+*/
+
+/* Add a black background color to the top navigation */
+/* .topnav {
+    background-color: #333;
+    overflow: hidden;
+} */
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    margin-left: -16px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+.nav-stuff {
+    float: left;
+    color: black;
+    text-align: center;
+    margin-left: -16px;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+.super-font, h1, h2, h3, h4 .label + p {
+    font-family: 'Georgia', sans-serif;
+}
+
+.sub-font2, p, ul, li {
+    font-family: 'Georgia', serif;
+    line-height: 0.5;
+}
+
+.sub-font, p, ul, li {
+    font-family: 'Georgia', serif;
+    line-height: 1.3;
+}
+
+.headline, h1 {
+    font-size: 3rem;
+    line-height: 0.9;
+    margin-bottom: 0.35rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.body-text {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-top: 0.8rem;
+
+}
+
+.body-text2 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-top: 0.8rem;
+
+}
+
+.kicker {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-weight: 300;
+    /* text-transform: uppercase; */
+}
+
+.credit  {
+    font-size: 1.2rem;
+    line-height: 0.75;
+    margin-top: 2rem;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+}
+
+.date {
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: 0.25;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.intro {
+    line-height: 1;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.subhead, h2 {
+    font-size: 1.3rem;
+    line-height: 0.9;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    font-weight: normal;
+    color: black;
+}
+
+.label {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.label-text, .label + p {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.note, p.img + p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.caption  {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
